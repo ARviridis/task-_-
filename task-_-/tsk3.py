@@ -225,3 +225,58 @@ if __name__ == '__main__':
     #lst = bubble_sort(lst) #0.015625 over
     #print(lst[0:2])
     print(bubble_sort(lst[2])[0:2])
+'''
+#######
+## vscode
+count_sort_test(lst)
+quick_sort_test(lst)
+quick_bubble_test(lst)
+merge_sort_test(lst)
+heap_sort_test(lst)
+q_a_h_sort_test(lst)
+sortst_test(lst)
+#
+ lst = [randint(0, 25) for _ in range(7)]
+#
+# временная потом декоратор для вс_коде
+def count_sort_test(lst):
+    t0 = process_time()
+    count_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def quick_sort_test(lst):
+    t0 = process_time()
+    quick_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def quick_bubble_test(lst):
+    t0 = process_time()
+    bubble_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def merge_sort_test(lst):
+    t0 = process_time()
+    merge_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def heap_sort_test(lst):
+    t0 = process_time()
+    heap_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def q_a_h_sort_test(lst):
+    t0 = process_time()
+    q_a_h_sort(lst)
+    return 't = ', process_time() - t0
+
+
+def sortst_test(lst):
+    t0 = process_time()
+    sortst(lst)
+    return 't = ', process_time() - t0
+'''
